@@ -1,7 +1,7 @@
-FROM elixir:1.11.4-slim
+FROM elixir:1.11.3-slim
 
-ENV NODE_VERSION=14.16.1 \
-  PHOENIX_VERSION=1.5.8 \
+ENV NODE_VERSION=14.15.4 \
+  PHOENIX_VERSION=1.5.7 \
   MIX_HOME=/root/.mix \
   MIX_ENV=prod
 
