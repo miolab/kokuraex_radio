@@ -3,7 +3,8 @@ FROM elixir:1.11.3-slim
 ENV NODE_VERSION=14.15.4 \
   PHOENIX_VERSION=1.5.7 \
   MIX_HOME=/root/.mix \
-  MIX_ENV=prod
+  MIX_ENV=prod \
+  SECRET_KEY_BASE=${SECRET_KEY_BASE}
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
